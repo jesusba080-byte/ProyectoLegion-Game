@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios - Legion Gamer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-1">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <span class="ms-3">LEGION GAMER</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/templates/juegos.html">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/templates/monitores.html">Monitores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light ms-1" href="/templates/accesorios.html">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/carrito.html">
+                            Carrito 
+                            <span class="badge bg-danger contador-carrito" style="display: none;">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div class="container mt-5">
+        <div class="alert alert-success text-center" role="alert">
+            <h2>Accesorios Gaming</h2>
+            <p>Mejora tu setup con los mejores accesorios</p>
+        </div>
+    </div>
+
+    <!-- Productos -->
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Accesorio 1 -->
+            <div class="col" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="https://media.falabella.com/sodimacCO/713428/w=1036,h=832,f=webp,fit=contain,q=85" class="card-img-top" alt="Combo Teclado Mouse">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo Teclado y Mouse Gamer</h5>
+                        <p class="card-text">Set completo con iluminación RGB</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Teclado mecánico + Mouse</li>
+                            <li class="list-group-item">Precio: $200.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Combo Teclado y Mouse Gamer', 200000, 'https://media.falabella.com/sodimacCO/713428/w=1036,h=832,f=webp,fit=contain,q=85')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accesorio 2 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100">
+                    <img src="https://media.falabella.com/sodimacCO/3026405/w=1036,h=832,f=webp,fit=contain,q=85" class="card-img-top" alt="Audífonos">
+                    <div class="card-body">
+                        <h5 class="card-title">Audífonos Gamer</h5>
+                        <p class="card-text">Sonido envolvente 7.1 con micrófono</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Con cancelación de ruido</li>
+                            <li class="list-group-item">Precio: $80.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Audífonos Gamer', 80000, 'https://media.falabella.com/sodimacCO/3026405/w=1036,h=832,f=webp,fit=contain,q=85')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accesorio 3 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="400">
+                <div class="card h-100">
+                    <img src="https://img.freepik.com/premium-photo/view-illuminated-neon-gaming-keyboard-setup-controller_756748-51072.jpg" class="card-img-top" alt="Teclado RGB">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado RGB Premium</h5>
+                        <p class="card-text">Teclado mecánico con switches azules</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Iluminación RGB personalizable</li>
+                            <li class="list-group-item">Precio: $150.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Teclado RGB Premium', 150000, 'https://img.freepik.com/premium-photo/view-illuminated-neon-gaming-keyboard-setup-controller_756748-51072.jpg')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accesorio 4 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="600">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="Mouse Gamer">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse Gamer Pro</h5>
+                        <p class="card-text">Mouse ergonómico con sensor óptico de alta precisión</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">16000 DPI ajustable</li>
+                            <li class="list-group-item">Precio: $120.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Mouse Gamer Pro', 120000, 'https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_UF894,1000_QL80_.jpg')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accesorio 5 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="800">
+                <div class="card h-100">
+                    <img src="https://static.nb.com.ar/i/nb_SILLA-GAMER-AUREOX-G400-NEGRA-Y-ROJO_ver_fa6c1099cc451c242bd91c6d7bb26d3b.jpeg" class="card-img-top" alt="Silla Gamer">
+                    <div class="card-body">
+                        <h5 class="card-title">Silla Gamer Ergonómica</h5>
+                        <p class="card-text">Comodidad para largas sesiones de juego</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Reclinable hasta 180°</li>
+                            <li class="list-group-item">Precio: $850.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Silla Gamer Ergonómica', 850000, 'https://static.nb.com.ar/i/nb_SILLA-GAMER-AUREOX-G400-NEGRA-Y-ROJO_ver_fa6c1099cc451c242bd91c6d7bb26d3b.jpeg')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accesorio 6 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="1000">
+                <div class="card h-100">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.O9Yy-Rpn1Jd-qT1AZZiA-QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Mousepad XL">
+                    <div class="card-body">
+                        <h5 class="card-title">Mousepad XL Gaming</h5>
+                        <p class="card-text">Superficie extra grande con borde antideslizante</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">90cm x 40cm</li>
+                            <li class="list-group-item">Precio: $45.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Mousepad XL Gaming', 45000, 'https://tse1.mm.bing.net/th/id/OIP.O9Yy-Rpn1Jd-qT1AZZiA-QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accesorio 7 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="1200">
+                <div class="card h-100">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.pb7jGd-aE1DlWHKb-115FwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Webcam">
+                    <div class="card-body">
+                        <h5 class="card-title">Webcam Full HD</h5>
+                        <p class="card-text">Perfecta para streaming y videollamadas</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">1080p 60fps</li>
+                            <li class="list-group-item">Precio: $180.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Webcam Full HD', 180000, 'https://tse4.mm.bing.net/th/id/OIP.pb7jGd-aE1DlWHKb-115FwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accesorio 8 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="1400">
+                <div class="card h-100">
+                    <img src="https://gmedia.playstation.com/is/image/SIEPDC/dualsense-edge-listing-thumb-01-en-23aug22?$facebook$" class="card-img-top" alt="Control PS5">
+                    <div class="card-body">
+                        <h5 class="card-title">Control DualSense PS5</h5>
+                        <p class="card-text">Control oficial de PlayStation 5</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Con haptic feedback</li>
+                            <li class="list-group-item">Precio: $280.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Control DualSense PS5', 280000, 'https://gmedia.playstation.com/is/image/SIEPDC/dualsense-edge-listing-thumb-01-en-23aug22?$facebook$')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accesorio 9 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="1600">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="Soporte Monitor">
+                    <div class="card-body">
+                        <h5 class="card-title">Soporte para Monitor</h5>
+                        <p class="card-text">Brazo articulado ajustable</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Hasta 32 pulgadas</li>
+                            <li class="list-group-item">Precio: $95.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Soporte para Monitor', 95000, 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_UF894,1000_QL80_.jpg')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-tech bg-black text-light mt-5">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-info fw-bold">Legion Gamer</h4>
+                    <p class="text-secondary">Tecnología, gaming y rendimiento al máximo nivel</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="text-uppercase text-info">Tienda</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="footer-link">Inicio</a></li>
+                        <li><a href="juegos.html" class="footer-link">Juegos</a></li>
+                        <li><a href="accesorios.html" class="footer-link">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase text-info">Soporte</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Contáctanos</a></li>
+                        <li><a href="#" class="footer-link">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase text-info">Contacto</h6>
+                    <p class="mb-1">📍 Bogotá, Colombia</p>
+                    <p class="mb-1">📞 +57 300 362 2902</p>
+                    <p class="mb-1">📧 jesusba080@gmail.com</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <small class="text-secondary">© 2026 Legion-gamer_Jesus – Todos los derechos reservados</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../carrito.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

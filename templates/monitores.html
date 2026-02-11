@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitores - Legion Gamer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-1">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <span class="ms-3">LEGION GAMER</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/templates/juegos.html">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light ms-1" href="/templates/monitores.html">Monitores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/templates/accesorios.html">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/carrito.html">
+                            Carrito 
+                            <span class="badge bg-danger contador-carrito" style="display: none;">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="alert alert-primary text-center" role="alert">
+            <h2>Monitores </h2>
+            <p>Encuentra el monitor perfecto para tu setup</p>
+        </div>
+    </div>
+
+    <!-- Productos -->
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Monitor 1 -->
+            <div class="col" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="https://www.kalley.com.co/medias/7705946476904-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wzMTYyMHxpbWFnZS93ZWJwfGFHTXhMMmhoWVM4eE5UTXpNRFU0TlRNME5qQTNPQzgzTnpBMU9UUTJORGMyT1RBMFh6QXdNVjgzTlRCWGVEYzFNRWd8NWU4ODFhZThlNjc1MTRiYWMwZTc4NzZjYTYyNGY3OWIxOWY5ZDk2NzBhNWM1ZmExZTJmOGFhOWJmN2E0NTYwYw" class="card-img-top" alt="Monitor Kalley">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitor Kalley 4K</h5>
+                        <p class="card-text">Monitor 4K de alta calidad, ideal para gaming y diseño</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Resolución 4K UHD</li>
+                            <li class="list-group-item">Precio: $300.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Monitor Kalley 4K', 600000, 'https://www.kalley.com.co/medias/7705946476904-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wzMTYyMHxpbWFnZS93ZWJwfGFHTXhMMmhoWVM4eE5UTXpNRFU0TlRNME5qQTNPQzgzTnpBMU9UUTJORGMyT1RBMFh6QXdNVjgzTlRCWGVEYzFNRWd8NWU4ODFhZThlNjc1MTRiYWMwZTc4NzZjYTYyNGY3OWIxOWY5ZDk2NzBhNWM1ZmExZTJmOGFhOWJmN2E0NTYwYw')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitor 2 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100">
+                    <img src="https://blog.soltekonline.com/content/images/2023/04/image-13.png" class="card-img-top" alt="Monitor Gaming">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitor Gaming Pro</h5>
+                        <p class="card-text">Monitor gamer con 144Hz para máximo rendimiento</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">144Hz - 1ms</li>
+                            <li class="list-group-item">Precio: $600.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Monitor Gaming Pro', 800000, 'https://blog.soltekonline.com/content/images/2023/04/image-13.png')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitor 3 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="400">
+                <div class="card h-100">
+                    <img src="https://www.lg.com/content/dam/channel/wcms/pe/images/monitores/24gs50f-b_awfq_espr_pe_c/gallery/ultragear-24gs50f-desktopzoom-01.jpg/_jcr_content/renditions/thum-1600x1062.jpeg" class="card-img-top" alt="Monitor LG">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitor LG UltraGear</h5>
+                        <p class="card-text">Monitor profesional con tecnología IPS</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">27" IPS Panel</li>
+                            <li class="list-group-item">Precio: $800.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Monitor LG UltraGear', 950000, 'https://www.lg.com/content/dam/channel/wcms/pe/images/monitores/24gs50f-b_awfq_espr_pe_c/gallery/ultragear-24gs50f-desktopzoom-01.jpg/_jcr_content/renditions/thum-1600x1062.jpeg')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitor 4 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="600">
+                <div class="card h-100">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.Pwiya3gqVQDg5dVjHMNlggHaII?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Monitor Curvo">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitor Curvo Samsung</h5>
+                        <p class="card-text">Experiencia inmersiva con pantalla curva</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">32" Curvo</li>
+                            <li class="list-group-item">Precio: $1.200.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Monitor Curvo Samsung', 1200000, 'https://tse1.mm.bing.net/th/id/OIP.Pwiya3gqVQDg5dVjHMNlggHaII?rs=1&pid=ImgDetMain&o=7&rm=3')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitor 5 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="800">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/714aVOYqLTL._AC_SL1500_.jpg" class="card-img-top" alt="Monitor ASUS">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitor ASUS ROG</h5>
+                        <p class="card-text">Monitor profesional para gamers exigentes</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">27" 240Hz</li>
+                            <li class="list-group-item">Precio: $1.000.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Monitor ASUS ROG', 1500000, 'https://m.media-amazon.com/images/I/714aVOYqLTL._AC_SL1500_.jpg')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitor 6 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="1000">
+                <div class="card h-100">
+                    <img src="https://monitores.com.co/wp-content/uploads/2023/09/Monitor-ViewSonic-Omni-Gaming-27-VX2718-P-MHD-Inicio-I-monitores.com_.co_.jpg" class="card-img-top" alt="Monitor LG 4K">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitor LG 4K Basic</h5>
+                        <p class="card-text">Excelente relación calidad-precio</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">24" 4K</li>
+                            <li class="list-group-item">Precio: $550.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Monitor LG 4K Basic', 550000, 'https://monitores.com.co/wp-content/uploads/2023/09/Monitor-ViewSonic-Omni-Gaming-27-VX2718-P-MHD-Inicio-I-monitores.com_.co_.jpg')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-tech bg-black text-light mt-5">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-info fw-bold">Legion Gamer</h4>
+                    <p class="text-secondary">Tecnología, gaming y rendimiento al máximo nivel</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="text-uppercase text-info">Tienda</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="footer-link">Inicio</a></li>
+                        <li><a href="juegos.html" class="footer-link">Juegos</a></li>
+                        <li><a href="monitores.html" class="footer-link">Monitores</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase text-info">Soporte</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Contáctanos</a></li>
+                        <li><a href="#" class="footer-link">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase text-info">Contacto</h6>
+                    <p class="mb-1">📍 Bogotá, Colombia</p>
+                    <p class="mb-1">📞 +57 300 362 2902</p>
+                    <p class="mb-1">📧 jesusba080@gmail.com</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <small class="text-secondary">© 2026 Legion-gamer_Jesus – Todos los derechos reservados</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../carrito.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

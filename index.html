@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legion Gamer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- seccion header menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-1">
+            <a class="navbar-brand d-flex align-items-center" href="/index.html">
+                <span class="ms-3">LEGION GAMER</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light ms-1" href="/templates/juegos.html">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/templates/monitores.html">Monitores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/templates/accesorios.html">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/carrito.html">
+                            Carrito 
+                            <span class="badge bg-danger contador-carrito" style="display: none;">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<!-- Seccion de hero -->
+<section class="hero d-flex justify-content-center align-items-center text-center text-white">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">
+        JUEGA MEJOR EQUÍPATE MEJOR 
+        </h1>
+    <p class="lead mb-4" data-aos="fade-up" data-aos-delay="600">
+        Juegos, Monitores Acessorios y Demas
+    </p>
+    </div>
+</section>
+    </header>
+
+    <!-- main contenido (categorias)-->
+<section class="container mb-5d">
+
+    <h1 class="text-center py-4"  data-aos="fade-up">Explora Nuestras Categorias</h1>
+    <div class="row">
+    <div class="col-12 col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
+    <div class="card" style="width: 18rem;">
+    <img src="https://assets-prd.ignimgs.com/2024/09/24/ghostofyotei-1727220081404.jpg" class="card-img-top" alt="Juego">
+    <div class="card-body">
+    <h5 class="card-title">JUEGOS</h5>
+    <p class="card-text">Aqui podras encontrar juegos de Playstations 5 </p>
+    <a href="/templates/juegos.html" class="btn btn-primary">Mas Informacíon</a>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="300" >
+    <div class="card" style="width: 18rem;">
+    <img src="https://blog.soltekonline.com/content/images/2023/04/image-13.png" class="card-img-top" alt="Monitores">
+    <div class="card-body">
+    <h5 class="card-title">MONITORES</h5>
+    <p class="card-text">Aqui podras encontrar monitores de alta calidad 4k</p>
+    <a href="/templates/monitores.html" class="btn btn-primary">Mas Informaíon</a>
+    </div>
+    </div>
+
+    </div>
+        <div class="col-12 col-md-6 col-lg-4 "  data-aos="fade-up" data-aos-delay="500">
+        <div class="card" style="width: 18rem;">
+    <img src="https://img.freepik.com/premium-photo/view-illuminated-neon-gaming-keyboard-setup-controller_756748-51072.jpg" class="card-img-top" alt="Accesorios">
+    <div class="card-body">
+    <h5 class="card-title">ACCESORIOS</h5>
+    <p class="card-text">Aqui encontraras componentes accesorios y mas para tu setup</p>
+    <a href="/templates/accesorios.html" class="btn btn-primary">Mas Informacíon</a>
+    </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Seccion de productos destacados -->
+<section class="container mt-5">
+    <h1 class="text-center py-4" data-aos="fade-up">Productos destacados</h1>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="card" style="width: 18rem;">
+    <img src="https://level-1.fr/Principal/wp-content/uploads/2020/07/ghost-of-tsushima-credit-sucker-punch-productions.jpg
+" class="card-img-top" alt="Juego">
+    <div class="card-body">
+    <h5 class="card-title">Ghost of Tsushima</h5>
+    <p class="card-text">Producto de la categoria juego mas detacado en ventas</p>
+    </div>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">Juego PS5</li>
+    <li class="list-group-item">Precio:150.000</li>
+    </ul>
+    <div class="card-body">
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Combo Teclado y Mouse Gamer', 200000, `https://level-1.fr/Principal/wp-content/uploads/2020/07/ghost-of-tsushima-credit-sucker-punch-productions.jpg`)">Añadir al carrito</button>
+
+    </div>
+</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card" style="width: 18rem;">
+    <img src="https://www.ktronix.com/medias/7705946478267-004-1400Wx1400H?context=bWFzdGVyfGltYWdlc3w3NzczNHxpbWFnZS93ZWJwfGFEVXlMMmd3TVM4eE5EazBPRFV3TnpneE1UZzNNQzgzTnpBMU9UUTJORGM0TWpZM1h6QXdORjh4TkRBd1YzZ3hOREF3U0F8ZjI5NDI0YzBkZjY5ZmQ2NWNhNzk5YjMxM2Y5ZjM0OWQ2NmVkYzc5MjY1OTU2Mzk4YjNhNGQxYTQ0ZjFhNTJmYQ" class="card-img-top" alt="kalley">
+    <div class="card-body">
+    <h5 class="card-title">Monitor kalley 4k</h5>
+    <p class="card-text">Articulo de la categoria monitores</p>
+    </div>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">monitor 4k</li>
+    <li class="list-group-item">Precio:600.000</li>
+    </ul>
+    <div class="card-body">
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Monitor kalley 4k', 200000, `https://www.ktronix.com/medias/7705946478267-004-1400Wx1400H?context=bWFzdGVyfGltYWdlc3w3NzczNHxpbWFnZS93ZWJwfGFEVXlMMmd3TVM4eE5EazBPRFV3TnpneE1UZzNNQzgzTnpBMU9UUTJORGM0TWpZM1h6QXdORjh4TkRBd1YzZ3hOREF3U0F8ZjI5NDI0YzBkZjY5ZmQ2NWNhNzk5YjMxM2Y5ZjM0OWQ2NmVkYzc5MjY1OTU2Mzk4YjNhNGQxYTQ0ZjFhNTJmYQ`)">Añadir al carrito</button>
+
+    </div>
+</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+            <div class="card" style="width: 18rem;">
+    <img src="https://media.falabella.com/sodimacCO/713428/w=1036,h=832,f=webp,fit=contain,q=85
+" class="card-img-top" alt="teclado ">
+    <div class="card-body">
+    <h5 class="card-title">Combo Teclado y mouse Gamer</h5>
+    <p class="card-text">Producto el cual incluye 2 articulos</p>
+    </div>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">Teclado + Mouse sodimac</li>
+    <li class="list-group-item">Precio:200.000</li>
+    </ul>
+    <div class="card-body">
+    <button class="btn btn-primary" onclick="agregarAlCarrito('Combo Teclado y Mouse Gamer', 200000, `https://www.media.falabella.com/sodimacCO/713428/w=1036,h=832,f=webp,fit=contain,q=85`)">Añadir al carrito</button>
+    </div>
+</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+            <div class="card" style="width: 18rem;">
+    <img src="https://media.falabella.com/sodimacCO/3026405/w=1036,h=832,f=webp,fit=contain,q=85" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">Audifonos</h5>
+    <p class="card-text">Audifonos de alta calida de sonido</p>
+    </div>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">Audifonos sodiac</li>
+    <li class="list-group-item">Precio:80.000</li>
+    </ul>
+    <div class="card-body">
+        <button class="btn btn-primary" onclick="agregarAlCarrito('Combo Teclado y Mouse Gamer', 200000, `https://media.falabella.com/sodimacCO/3026405/w=1036,h=832,f=webp,fit=contain,q=85`)">Añadir al carrito</button>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+
+<!-- sobre nosotros -->
+    <h1 class="text-center py-5 mt-5 mb-5" data-aos="fade-up">Sobre Nosotros</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
+                <div class="card" style="width: 18rem;">
+                <img src="https://img.freepik.com/vector-premium/icono-videojuegos_1076610-21328.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+    <p class="card-text">Somos una tienda digital con una amplia variedad de productos de alta calidad y demanda </p>
+    </div>
+</div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="300">
+                <div class="card" style="width: 18rem;">
+                <img src="https://static.vecteezy.com/system/resources/previews/017/744/677/original/video-game-icon-png.png" class="card-img-top" alt="...">
+    <div class="card-body">
+    <p class="card-text">Somo una tienda digital con calidad que podras sentir y confianza que podras comprobar."</p>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Contacto -->
+<section class="container my-5">
+    <div class="row justify-content-center">
+    <div class="col-md-6">
+    <h2 class="text-center mb-5 mt-5">Contáctanos</h2>
+    <form id="formWhatsapp">
+
+        <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" id="nombre" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+        <label class="form-label">Telefono</label>
+        <input type="tel" id="telefono" class="form-control" required>
+        </div>
+
+        <div class="d-grid">
+        <button type="submit" class="btn btn-success">
+            Contactar por por WhatsApp
+        </button>
+        </div>
+    </form>
+    </div>
+    </div>
+</section>
+
+<!-- pie de pagina  -->
+<footer class="footer-tech bg-black text-light mt-5">
+    <div class="container-fluid py-5">
+    <div class="row">
+
+    <div class="col-md-4 mb-4">
+        <h4 class="text-info fw-bold">Legion Gamer</h4>
+        <p class="text-secondary">
+            Tecnología, gaming y rendimiento al máximo nivel
+        </p>
+        </div>
+
+        <!-- links  -->
+        <div class="col-md-2 mb-4">
+        <h6 class="text-uppercase text-info">Tienda</h6>
+        <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="/templates/Juegos.html" class="footer-link">Juegos</a></li>
+            <li><a href="#" class="footer-link">Categorías</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase text-info">Soporte</h6>
+        <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Contáctanos</a></li>
+            <li><a href="#" class="footer-link">WhatsApp</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase text-info">Contacto</h6>
+        <p class="mb-1">📍 Bogotá, Colombia</p>
+        <p class="mb-1">📞 +57 300 362 2902</p>
+    </div>
+    </div>
+    <hr class="border-secondary">
+    <div class="text-center">
+    <small class="text-secondary">
+        © 2026 Legion-gamer_Jesus — Todos los derechos reservados
+    </small>
+    </div>
+    </div>
+</footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+    duration: 1000,   // la velacidad  de la animacion
+    once: true        // solo sera una vez
+    });
+</script>
+<script src="carrito.js"></script>
+
+</body>
+</html>

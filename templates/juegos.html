@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos - Legion Gamer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-1">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <span class="ms-3">LEGION GAMER</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light ms-1" href="/templates/juegos.html">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/templates/monitores.html">Monitores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/templates/accesorios.html">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-1" href="/carrito.html">
+                            Carrito 
+                            <span class="badge bg-danger contador-carrito" style="display: none;">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrusel -->
+    <div class="container mt-5">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.3djuegos.com/juegos/20010/ghost_of_yotei/fotos/ficha/ghost_of_yotei-5923138.jpg" class="d-block w-100" alt="Ghost of Yotei">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pics.filmaffinity.com/black_myth_wukong-856105810-large.jpg" class="d-block w-100" alt="Black Myth Wukong">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://th.bing.com/th/id/R.5f2cc932eab5e7635db3abab4341a730?rik=86QPfCiU58LJ4w&riu=http%3a%2f%2fwww.lifeisxbox.eu%2fwp-content%2fuploads%2f2019%2f12%2frdr2.jpg&ehk=O9MfstagQx3uDt8KPRP66NO6DWMq9Pd88UGMX2M8bGk%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="Red Dead Redemption 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Productos -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Juegos Disponibles PS5</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Juego 1 -->
+            <div class="col" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/04/ghost-of-yotei-tag-page-cover-art.jpg" class="card-img-top" alt="Ghost of Yotei">
+                    <div class="card-body">
+                        <h5 class="card-title">Ghost of Yotei</h5>
+                        <p class="card-text">Continuacion de Ghost of tsushima</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Acción y aventura</li>
+                            <li class="list-group-item">Precio: $250.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Ghost of Yotei', 250000, 'https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/04/ghost-of-yotei-tag-page-cover-art.jpg')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 2 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100">
+                    <img src="https://level-1.fr/Principal/wp-content/uploads/2020/07/ghost-of-tsushima-credit-sucker-punch-productions.jpg" class="card-img-top" alt="Ghost of Tsushima">
+                    <div class="card-body">
+                        <h5 class="card-title">Ghost of Tsushima</h5>
+                        <p class="card-text">Aventura samurái épica en Japón feudal</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Mundo abierto</li>
+                            <li class="list-group-item">Precio: $150.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Ghost of Tsushima', 150000, 'https://level-1.fr/Principal/wp-content/uploads/2020/07/ghost-of-tsushima-credit-sucker-punch-productions.jpg')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 3 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="400">
+                <div class="card h-100">
+                    <img src="https://pics.filmaffinity.com/black_myth_wukong-856105810-large.jpg" class="card-img-top" alt="Black Myth Wukong">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Myth: Wukong</h5>
+                        <p class="card-text">RPG de acción basado en la mitología china</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">RPG de Acción</li>
+                            <li class="list-group-item">Precio: $280.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Black Myth: Wukong', 280000, 'https://pics.filmaffinity.com/black_myth_wukong-856105810-large.jpg')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 4 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="600">
+                <div class="card h-100">
+                    <img src="https://th.bing.com/th/id/R.5f2cc932eab5e7635db3abab4341a730?rik=86QPfCiU58LJ4w&riu=http%3a%2f%2fwww.lifeisxbox.eu%2fwp-content%2fuploads%2f2019%2f12%2frdr2.jpg&ehk=O9MfstagQx3uDt8KPRP66NO6DWMq9Pd88UGMX2M8bGk%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Red Dead Redemption 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Dead Redemption 2</h5>
+                        <p class="card-text">Épica aventura del viejo oeste</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Acción y aventura mundo abierto </li>
+                            <li class="list-group-item">Precio: $180.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Red Dead Redemption 2', 180000, 'https://th.bing.com/th/id/R.5f2cc932eab5e7635db3abab4341a730?rik=86QPfCiU58LJ4w&riu=http%3a%2f%2fwww.lifeisxbox.eu%2fwp-content%2fuploads%2f2019%2f12%2frdr2.jpg&ehk=O9MfstagQx3uDt8KPRP66NO6DWMq9Pd88UGMX2M8bGk%3d&risl=&pid=ImgRaw&r=0')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 5 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="800">
+                <div class="card h-100">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202312/0117/da083fa5e19458dd750aa8a6ea30ba10bac6f87074693df5.jpg" class="card-img-top" alt="The Last of Us Part II">
+                    <div class="card-body">
+                        <h5 class="card-title">The Last of Us Part II</h5>
+                        <p class="card-text">Continuación de la épica historia post-apocalíptica</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Aventura y supervivencia</li>
+                            <li class="list-group-item">Precio: $160.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('The Last of Us Part II', 160000, 'https://m.media-amazon.com/images/I/81k-5p7tRCL._AC_UF894,1000_QL80_.jpg')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 6 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="1000">
+                <div class="card h-100">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png" class="card-img-top" alt="Spider-Man 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Spider-Man 2</h5>
+                        <p class="card-text">Acción superheroica en Nueva York</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Acción aventura y mundo abierto</li>
+                            <li class="list-group-item">Precio: $270.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Spider-Man 2', 270000, 'https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png')">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-tech bg-black text-light mt-5">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-info fw-bold">Legion Gamer</h4>
+                    <p class="text-secondary">Tecnología, gaming y rendimiento al máximo nivel</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="text-uppercase text-info">Tienda</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="footer-link">Inicio</a></li>
+                        <li><a href="juegos.html" class="footer-link">Juegos</a></li>
+                        <li><a href="monitores.html" class="footer-link">Monitores</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase text-info">Soporte</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Contáctanos</a></li>
+                        <li><a href="#" class="footer-link">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase text-info">Contacto</h6>
+                    <p class="mb-1">📍 Bogotá, Colombia</p>
+                    <p class="mb-1">📞 +57 300 362 2902</p>
+                    <p class="mb-1">📧 jesusba080@gmail.com</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <small class="text-secondary">© 2026 Legion-gamer_Jesus – Todos los derechos reservados</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../carrito.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
