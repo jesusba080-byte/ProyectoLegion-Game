@@ -164,20 +164,7 @@ function finalizarCompra() {
     
     const total = carrito.reduce((sum, item) => sum + (item.precio * item.cantidad), 0);
     
-    // mensaje para finalizar compra en WhatsApp
-    let mensaje = '*Pedido desde Legion Gamer*%0A%0A';
-    
-    carrito.forEach(item => {
-    mensaje += `• ${item.nombre}%0A`;
-    mensaje += `  Cantidad: ${item.cantidad}%0A`;
-    mensaje += `  Precio: $${item.precio.toLocaleString()}%0A`;
-    mensaje += `  Subtotal: $${(item.precio * item.cantidad).toLocaleString()}%0A%0A`;
-    });
-    
-    mensaje += `*Total: $${total.toLocaleString()}*`;
-    
-    const numeroDestino = "573003622902";
-    const url = `https://wa.me/${numeroDestino}?text=${mensaje}`;
-    
-    window.open(url, "_blank");
+    // mensaje final compra
+            swal("Gracias😊✅","Por Realizar Tu Compra","success")
+
 }
